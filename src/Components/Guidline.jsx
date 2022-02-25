@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Guidline() {
+export default function GuidLine() {
   return (
-    <div>Guidline</div>
+    <>
+    <h1>hello</h1>
+    </>
   )
 }
