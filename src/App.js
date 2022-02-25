@@ -1,11 +1,23 @@
 
 import './App.css';
+import Home from './Components/Home';
 
 function App() {
   return (
     <>
-     <h1>Welcome to my New App</h1>
-     <p>This is my new change which i added</p>
+    <Router>
+    
+      <Home/>
+
+        <hr />
+
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/screenshot" element={<Dashboard />}></Route>
+        </Routes>
+      
+    </Router>
     </>
   );
 }
