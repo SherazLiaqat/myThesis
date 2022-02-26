@@ -14,11 +14,11 @@ export default function Header() {
                   fontSize: "32px",
                   fontWeight: "bold",
                   textDecoration: "none",
-                  marginLeft: "-10rem",
+                 
                 }}
                 to="/"
               >
-                <i class="fa fa-home" aria-hidden="true"></i>Home
+              Home
               </NavLink>
             </Nav>
           </Navbar.Collapse>
