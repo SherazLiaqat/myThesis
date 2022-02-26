@@ -60,7 +60,7 @@ export default function PakistanGuidline() {
           rowsPerPageOptions={[5]}
           checkboxSelection
         />
-      </div></>) : (<img src={img2}/>)}
+      </div></>) : (<img src={img2} alt="pk img"/>)}
     
     </>
   );
