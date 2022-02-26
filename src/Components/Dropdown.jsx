@@ -6,7 +6,7 @@ export default function BasicExample() {
     <>
 <nav className="nav1">
 
-<label for="touch"><span>Please Select The Country</span></label>               
+<label for="touch"><span style={{fontSize:'32px'}} className="span">Please Select The Country</span></label>               
 <input type="checkbox" id="touch"/> 
 
 <ul class="slide" style={{color:'white',textDecoration:"none"}}>

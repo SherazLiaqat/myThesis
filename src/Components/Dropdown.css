@@ -4,12 +4,13 @@
 
 
 .nav1 {
-  width : 400px; 
+  width : 600px; 
   background : #2d2f31; 
   margin : 40px auto; 
-  border-radius:  40px;
+  border-radius: 40px;
 }
-span {
+.span {
+ 
   padding : 30px;
   background : #2d2f31; 
   color : white;
@@ -17,12 +18,18 @@ span {
   font-variant : small-caps;
   cursor : pointer;
   display: block;
+  border-radius: 40px;
 }
-
+.slide li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
 span::after {
+ left: 70%;
   float: right;
-  right: 10%;
-  content: "+";
+  /* right: 70%; */
+  content: "";
 }
 
 .slide {
@@ -30,13 +37,13 @@ span::after {
   width:100%;
   height:0px;
   overflow: hidden;
-  text-align: center;
+  /* text-align: center; */
   transition: height .4s ease;
  color:'white';
  text-Decoration:"none";
 }
 
-.slide li {padding : 30px;}
+.slide li {padding : 8px;list-style: none;}
 
 #touch {position: absolute; opacity: 0; height: 0px;}    
 

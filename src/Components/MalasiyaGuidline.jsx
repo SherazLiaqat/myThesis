@@ -1,8 +1,7 @@
 import "./Guidlines.css";
-import * as React from "react";
+import  React,{useState} from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import img2 from '../Components/Images/my.png';
-
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
   { field: "firstName", headerName: "First name", width: 130 },
@@ -35,14 +34,24 @@ const rows = [
   { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
   { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
 ];
-export default function Guidlines() {
+export default function PakistanGuidline() {
+  const [costByStripPack, setCostByStripPack] = useState('false')
+  const selectGuidlines=()=>{
+    setCostByStripPack(true)
+  }
+  const selectScreenshot=()=>{
+    setCostByStripPack(!setCostByStripPack)
+    
+  }
+  
   return (
     <>
-      <h1>Guidlines</h1>
+    
       <div style={{ display: "flex" }}>
-        <button className="button">Guidlines</button>
-        <button className="button">Screenshot</button>
+        <button className="button" onClick={() => selectGuidlines()}>Guidlines</button>
+        <button className="button"onClick={() => selectScreenshot()}>Screenshot</button>
       </div>
+      {costByStripPack ? (<>  <h1>Guidlines For Malasiya KFC</h1>
       <div style={{ height: 400, width: "100%" }}>
         <DataGrid
           rows={rows}
@@ -51,8 +60,8 @@ export default function Guidlines() {
           rowsPerPageOptions={[5]}
           checkboxSelection
         />
-        <img src={img2}/>
-      </div>
+      </div></>) : (<img src={img2}/>)}
+    
     </>
   );
 }
